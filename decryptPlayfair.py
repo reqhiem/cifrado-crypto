@@ -103,7 +103,8 @@ def decryptPlayfair(code, key):
     return code
 
 
-code = input("Ingrese el texto: ")
-key = input("Ingrese la clave: ")
-text = decryptPlayfair(code, key)
-print("Texto plano:", text)
+if __name__ == "__main__":
+    code = input("Ingrese el texto: ")
+    key = input("Ingrese la clave: ")
+    text = decryptPlayfair(code, key)
+    print("Texto plano:", text)
